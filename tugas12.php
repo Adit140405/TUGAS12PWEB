@@ -111,26 +111,6 @@ echo "</pre>";
 
 <?php
 $arrNilai=array("Fulan"=>80, "Fulin"=>90, "Fulun"=>75, "Falan"=>85);
-echo "<b>Array sebelum diurutkan</b>";
-echo "<pre>";
-print_r($arrNilai);
-echo "</pre>";
-asort($arrNilai);
-reset($arrNilai);
-echo "<b>Array setelah diurutkan dengan asort()</b>";
-echo "<pre>";
-print_r($arrNilai);
-echo "</pre>";
-arsort($arrNilai);
-reset($arrNilai);
-echo "<b>Array setelah diurutkan dengan arsort()</b>";
-echo "<pre>";
-print_r($arrNilai);
-echo "</pre>";
-?>
-
-<?php
-$arrNilai=array("Fulan"=>80, "Fulin"=>90, "Fulun"=>75, "Falan"=>85);
 
 echo "<b>Array sebelum diurutkan</b>";
 echo "<pre>";
@@ -195,19 +175,6 @@ echo "Tidak ada buah Kedondong di array tersebut";
 ?>
 
 <?php
-//fungsi ini tanpa return value, & tanpa paramater
-function cetak_ganjil(){
-for($i = 0; $i < 100; $i++){
-if($i%2==1){
-echo "$i, ";
-}
-}
-}
-//Pemanggilan fungsi
-cetak_ganjil();
-?>
-
-<?php
 //fungsi ini dengan return value, & paramater
 function cetak_ganjil_dengan_batas($awal, $akhir){
 for($i = $awal; $i <$akhir; $i++){
@@ -245,16 +212,6 @@ echo tambah_string($string). "<br>";
 echo "\$string = $string<br>";
 ?>
 
-
-<?php
-// function luas_lingkaran ($jari){
-// return 3.14*$jari*$jari;
-// }
-$arr=get_defined_functions();
-echo "<pre>";
-print_r($arr);
-echo "</pre>";
-?>
 
 <?php
 // function luas_lingkaran ($jari){
